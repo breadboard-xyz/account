@@ -1,0 +1,36 @@
+{
+  "name": "taskmill-core-account",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a7medkamel/taskmill-core-account.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a7medkamel/taskmill-core-account/issues"
+  },
+  "homepage": "https://github.com/a7medkamel/taskmill-core-account#readme",
+  "dependencies": {
+    "auth-header": "^0.3.1",
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.1",
+    "config": "^1.21.0",
+    "config-url": "git+https://github.com/a7medkamel/config-url.git",
+    "express": "^4.14.0",
+    "express-jwt": "^3.4.0",
+    "jsonwebtoken": "^7.1.3",
+    "lodash": "^4.13.1",
+    "mongodb": "^2.2.4",
+    "mongodb-migrations": "^0.6.1",
+    "mongoose": "^4.5.5",
+    "rand-token": "^0.2.1",
+    "url-join": "^1.1.0",
+    "winston": "^2.2.0"
+  }
+}
