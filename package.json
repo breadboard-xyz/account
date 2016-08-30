@@ -27,10 +27,12 @@
     "jsonwebtoken": "^7.1.3",
     "lodash": "^4.13.1",
     "mongodb": "^2.2.4",
-    "mongodb-migrations": "^0.6.1",
     "mongoose": "^4.5.5",
     "rand-token": "^0.2.1",
     "url-join": "^1.1.0",
     "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "mongodb-migrations": "^0.6.1"
   }
 }
