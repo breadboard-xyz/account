@@ -1,0 +1,22 @@
+{
+  "jwt"         : {
+    "key"       : "[SECRET]",
+    "public"    : "[PUBLIC]",
+    "expiresIn" : 1800 // 30 * 60 sec
+  },
+  "account"     : {
+    "port"          : 8050,
+    "ip-whitelist"  : []
+  },
+  "mongo"       : {
+      "url"     : "mongodb://[USER]:[PASSWORD]@localhost/account"
+  },
+  "backend"     : {
+      "mongodb"   : {
+        "host"      : "localhost",
+        "port"      : 27017,
+        "user"      : "[USER]",
+        "password"  : "[PASSWORD]"
+      }
+  }
+}

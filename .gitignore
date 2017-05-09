@@ -56,3 +56,4 @@ jspm_packages
 ################################################
 
 config/local.js
+config/local.json
