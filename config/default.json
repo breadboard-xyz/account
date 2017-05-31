@@ -6,7 +6,16 @@
   },
   "account"     : {
     "port"          : 8050,
-    "ip-whitelist"  : []
+    "ip-whitelist"  : [],
+    "impersonate" : {
+      "username" : "[GITHUB_USER_NAME]"
+    },
+    "oauth" : {
+      "github"    : {
+        "id"      : "[GITHUB_APP_IP]",
+        "secret"  : "[GITHUB_APP_SECRET]"
+      }
+    }
   },
   "mongo"       : {
       "url"     : "mongodb://[USER]:[PASSWORD]@localhost/account"
