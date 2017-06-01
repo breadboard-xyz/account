@@ -4,13 +4,24 @@
     "public"    : "[PUBLIC]",
     "expiresIn" : 1800 // 30 * 60 sec
   },
+  // "www"         : {
+  //   "url"       : "https://www.breadboard.io"
+  // },
   "account"     : {
     "port"          : 8050,
     "ip-whitelist"  : [],
     "impersonate" : {
-      "username" : "[GITHUB_USER_NAME]"
+      "username"  : null
+    },
+    "session" : {
+      "host"              : "[HOST]",
+      "port"              : 6379,
+      "prefix"            : "session:",
+      "secret"            : "[SECRET]",
+      "password"          : "[PASSWORD]"
     },
     "oauth" : {
+      "callback"  : "https://www.breadboard.io/account/callback",
       "github"    : {
         "id"      : "[GITHUB_APP_IP]",
         "secret"  : "[GITHUB_APP_SECRET]"
