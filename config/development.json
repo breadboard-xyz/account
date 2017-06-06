@@ -1,13 +1,10 @@
 {
-  // "www"         : {
-  //   "url"       : "http://localhost:1337"
-  // },
   "account"     : {
     "impersonate" : {
       "username"  : "[GITHUB_USER_NAME]"
     },
     "oauth" : {
-      "callback"  : "http://localhost:1337/account/callback",
+      "callback"  : "http://localhost:1337/auth/callback"
     }
   }
 }
