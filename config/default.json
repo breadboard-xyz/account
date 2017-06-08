@@ -15,7 +15,7 @@
       "strategy"  : [
         {
           "module"        : "passport-github2",
-          "name"          : "github",
+          "name"          : "github.com",
           "options"       : {
             "clientID"          : "[GITHUB_APP_IP]",
             "clientSecret"      : "[GITHUB_APP_SECRET]",
