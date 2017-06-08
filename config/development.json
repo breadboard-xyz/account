@@ -1,7 +1,7 @@
 {
   "account"     : {
     "impersonate" : {
-      "username"  : "[GITHUB_USER_NAME]"
+      "username"  : "[USER_NAME]"
     },
     "oauth" : {
       "callback"  : "http://localhost:1337/auth/callback"
