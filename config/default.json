@@ -10,6 +10,15 @@
     "impersonate" : {
       "username"  : null
     },
+    "mongo"       : {
+      "url"     : "mongodb://[USER]:[PASSWORD]@localhost/account"
+    },
+    "redis" : {
+      "host"          : "[HOST]",
+      "port"          : 6379,
+      "password"      : "[PASSWORD]",
+      "db"            : 8
+    },
     "oauth" : {
       "callback"  : "https://www.breadboard.io/auth/callback",
       "strategy"  : [
@@ -35,9 +44,6 @@
         }
       ]
     }
-  },
-  "mongo"       : {
-      "url"     : "mongodb://[USER]:[PASSWORD]@localhost/account"
   },
   "backend"     : {
       "mongodb"   : {
