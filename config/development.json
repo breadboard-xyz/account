@@ -4,7 +4,7 @@
       "username"  : "[USER_NAME]"
     },
     "oauth" : {
-      "callback"  : "http://localhost:1337/auth/callback"
+      "callback"  : "http://localhost:8040/auth/callback"
     }
   }
 }
