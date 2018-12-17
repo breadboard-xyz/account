@@ -24,7 +24,6 @@
     "config-url": "git+https://git@github.com/a7medkamel/config-url.git",
     "express": "^4.16.3",
     "express-healthcheck": "^0.1.0",
-    "express-ipfilter": "^0.3.1",
     "express-jwt": "^5.3.1",
     "jsonwebtoken": "^8.3.0",
     "lodash": "^4.17.10",
