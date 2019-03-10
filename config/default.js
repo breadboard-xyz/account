@@ -17,7 +17,7 @@ module.exports = {
     "mongo"       : {
       "hostname"  : fs.readFileSync('/run/secrets/mongodb/hostname', 'utf-8'),
       "port"      : 27017,
-      "user"      : fs.readFileSync('/run/secrets/mongodb/username', 'utf-8'),
+      "username"  : fs.readFileSync('/run/secrets/mongodb/username', 'utf-8'),
       "password"  : fs.readFileSync('/run/secrets/mongodb/password', 'utf-8'),
       "database"  : fs.readFileSync('/run/secrets/mongodb/database', 'utf-8')
     },
