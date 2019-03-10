@@ -5,20 +5,24 @@ var bytes = require('bytes')
 
 module.exports = {
   "jwt"         : {
-    "key"       : fs.readFileSync('./.secrets/key/key', 'utf-8'),
-    "public"    : fs.readFileSync('./.secrets/key/key.pub', 'utf-8'),
+    "key"       : fs.readFileSync('/run/secrets/key/key', 'utf-8'),
+    "public"    : fs.readFileSync('/run/secrets/key/key.pub', 'utf-8'),
     "expiresIn" : ms('30m') / 1000
   },
   "account"     : {
     "port"          : 8050,
     "impersonate" : {
-      "username"  : "a7medkamel"
+      "username"  : null
     },
     "mongo"       : {
-      "url"     : `mongodb://${fs.readFileSync('./.secrets/mongodb/username', 'utf-8')}:${fs.readFileSync('./.secrets/mongodb/password', 'utf-8')}@${fs.readFileSync('./.secrets/mongodb/host', 'utf-8')}/account`
+      "hostname"  : fs.readFileSync('/run/secrets/mongodb/hostname', 'utf-8'),
+      "port"      : 27017,
+      "user"      : fs.readFileSync('/run/secrets/mongodb/username', 'utf-8'),
+      "password"  : fs.readFileSync('/run/secrets/mongodb/password', 'utf-8'),
+      "database"  : fs.readFileSync('/run/secrets/mongodb/database', 'utf-8')
     },
     "redis" : {
-      "host"          : "localhost",
+      "host"          : "account.redis.breadboard.xyz",
       "port"          : 6379,
       "password"      : null,
       "db"            : 0
@@ -30,8 +34,8 @@ module.exports = {
           "module"        : "passport-github2",
           "name"          : "github.com",
           "options"       : {
-            "clientID"          : fs.readFileSync('./.secrets/oauth/strategy/github.com/id', 'utf-8'),
-            "clientSecret"      : fs.readFileSync('./.secrets/oauth/strategy/github.com/secret', 'utf-8'),
+            "clientID"          : fs.readFileSync('/run/secrets/oauth/strategy/github.com/id', 'utf-8'),
+            "clientSecret"      : fs.readFileSync('/run/secrets/oauth/strategy/github.com/secret', 'utf-8'),
             "authorizationURL"  : null, // "https://github.com/login/oauth/authorize",
             "tokenURL"          : null, // "https://github.com/login/oauth/access_token",
             "customHeaders"     : null, // {},
@@ -51,10 +55,10 @@ module.exports = {
   },
   "backend"     : {
       "mongodb"   : {
-        "host"      : fs.readFileSync('./.secrets/backend/mongodb/host', 'utf-8'),
+        "host"      : fs.readFileSync('/run/secrets/backend/mongodb/host', 'utf-8'),
         "port"      : 27017,
-        "user"      : fs.readFileSync('./.secrets/backend/mongodb/user', 'utf-8'),
-        "password"  : fs.readFileSync('./.secrets/backend/mongodb/password', 'utf-8')
+        "user"      : fs.readFileSync('/run/secrets/backend/mongodb/user', 'utf-8'),
+        "password"  : fs.readFileSync('/run/secrets/backend/mongodb/password', 'utf-8')
       }
   }
 };
