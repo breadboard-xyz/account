@@ -19,6 +19,7 @@
   "dependencies": {
     "auth-header": "^1.0.0",
     "bluebird": "^3.5.3",
+    "bluebird-retry": "^0.11.0",
     "body-parser": "^1.18.3",
     "config": "^3.0.1",
     "config-url": "git+https://git@github.com/a7medkamel/config-url.git",
