@@ -53,13 +53,5 @@ module.exports = {
         }
       ]
     }
-  },
-  "backend"     : {
-      "mongodb"   : {
-        "host"      : _.trim(fs.readFileSync('/run/secrets/backend/mongodb/host', 'utf-8')),
-        "port"      : 27017,
-        "user"      : _.trim(fs.readFileSync('/run/secrets/backend/mongodb/user', 'utf-8')),
-        "password"  : _.trim(fs.readFileSync('/run/secrets/backend/mongodb/password', 'utf-8'))
-      }
   }
 };
