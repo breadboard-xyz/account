@@ -24,7 +24,7 @@
     "config": "^3.1.0",
     "config-url": "git+https://git@github.com/a7medkamel/node-config-url.git",
     "config-redis": "git+https://git@github.com/a7medkamel/node-config-redis.git",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-healthcheck": "^0.1.0",
     "express-jwt": "^5.3.1",
     "jsonwebtoken": "^8.5.0",
