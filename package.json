@@ -21,7 +21,7 @@
     "bluebird": "^3.5.3",
     "bluebird-retry": "^0.11.0",
     "body-parser": "^1.18.3",
-    "config": "^3.1.0",
+    "config": "^3.3.8",
     "config-url": "git+https://git@github.com/a7medkamel/node-config-url.git",
     "config-redis": "git+https://git@github.com/a7medkamel/node-config-redis.git",
     "express": "^4.16.4",
